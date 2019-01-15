@@ -22,7 +22,7 @@ use Swoft\Core\Application;
 use Swoft\Http\Message\Server\Request;
 
 /**
- * 控制器demo
+ * 控制器demo1
  * @Controller(prefix="/demo2")
  */
 class DemoController
