@@ -95,7 +95,7 @@ class DemoController
             });
         });
 
-        return 'success';
+        return 'success index2';
     }
 
     public function index6()
@@ -129,7 +129,6 @@ class DemoController
 
     /**
      * 国际化测试
-     * @RequestMapping('i18n')
      */
     public function i18n()
     {
