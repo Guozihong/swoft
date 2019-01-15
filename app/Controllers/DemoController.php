@@ -129,6 +129,7 @@ class DemoController
 
     /**
      * 国际化测试
+     * @RequestMapping('i18n')
      */
     public function i18n()
     {
