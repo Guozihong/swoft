@@ -100,9 +100,9 @@ class DemoController
 
     public function index6()
     {
-        throw new Exception('AAAA');
-        //        $a = $b;
-        $A = new AAA();
+        // throw new Exception('AAAA');
+        // //        $a = $b;
+        // $A = new AAA();
 
         return ['data6'];
     }
