@@ -21,6 +21,10 @@ use Swoft\View\Bean\Annotation\View;
 use Swoft\Core\Application;
 use Swoft\Http\Message\Server\Request;
 
+use Swoft\Http\Message\Bean\Annotation\Middleware;
+use Swoft\Http\Message\Bean\Annotation\Middlewares;
+use App\Middlewares\GroupTestMiddleware;
+
 /**
  * 控制器demo
  * @Controller(prefix="/demo2")
