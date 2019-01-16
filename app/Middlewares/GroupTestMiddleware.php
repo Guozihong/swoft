@@ -19,6 +19,11 @@ use Swoft\Http\Message\Middleware\MiddlewareInterface;
 
 /**
  * @Bean()
+ * @uses      GroupTestMiddleware
+ * @version   2017年11月16日
+ * @author    huangzhhui <huangzhwork@gmail.com>
+ * @copyright Copyright 2010-2017 Swoft software
+ * @license   PHP Version 7.x {@link http://www.php.net/license/3_0.txt}
  */
 class GroupTestMiddleware implements MiddlewareInterface
 {
@@ -36,7 +41,6 @@ class GroupTestMiddleware implements MiddlewareInterface
     {
         // return response()->withStatus(401);
         $response = $handler->handle($request);
-        return $response->withStatus(401);
         return $response->withAddedHeader('Middleware-Group-Test', 'success');
     }
 }

@@ -21,7 +21,7 @@ class EchoController implements HandlerInterface
      */
     public function checkHandshake(Request $request, Response $response): array
     {
-        return [0, $response];
+        return [self::HANDSHAKE_OK, $response];
     }
 
     /**
