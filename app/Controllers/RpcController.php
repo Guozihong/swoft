@@ -46,6 +46,7 @@ class RpcController
 
     /**
      * @Inject('UserLogic')
+     * @var \App\Models\Logic\UserLogic
      */
     private $logic;
 
