@@ -64,7 +64,7 @@ class DemoController
      * @param int $bookId
      * @return array
      */
-    public function index(Request $request,$bookId,$uid)
+    public function index(Request $request,int $bookId,$uid)
     {
         // 获取所有GET参数
         $get = $request->query();
