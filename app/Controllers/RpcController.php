@@ -39,7 +39,8 @@ class RpcController
     private $demoServiceV2;
 
     /**
-     * @Reference("user")
+     * @Reference("user123")
+     * @var \App\Lib\MdDemoInterface
      */
     private $mdDemoService;
 
