@@ -39,14 +39,13 @@ class RpcController
     private $demoServiceV2;
 
     /**
-     * @Reference("user123")
+     * @Reference("user")
      * @var \App\Lib\MdDemoInterface
      */
     private $mdDemoService;
 
     /**
-     * @Inject()
-     * @var \App\Models\Logic\UserLogic
+     * @Inject('UserLogic')
      */
     private $logic;
 
