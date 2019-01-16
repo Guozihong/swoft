@@ -61,7 +61,6 @@ class DemoController
      * @RequestMapping(route="index/{uid}/{bookId}", method={RequestMethod::GET, RequestMethod::POST})
      *
      * @param Request $request
-     * @param int $bookId
      * @return array
      */
     public function index(Request $request,int $bookId,$uid)
