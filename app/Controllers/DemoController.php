@@ -58,13 +58,13 @@ class DemoController
     /**
      * 定义一个route,支持get和post方式，处理uri=/demo2/index
      *
-     * @RequestMapping(route="index/{uid12}", method={RequestMethod::GET, RequestMethod::POST})
+     * @RequestMapping(route="index/{uid12}/{bookId}", method={RequestMethod::GET, RequestMethod::POST})
      *
      * @param Request $request
-     *
+     * @param int $uid
      * @return array
      */
-    public function index(Request $request,$uid)
+    public function index(Request $request,$bookId,$uid)
     {
         // 获取所有GET参数
         $get = $request->query();
@@ -79,7 +79,7 @@ class DemoController
         // 获取name参数默认值defaultName
         $inputName = $request->input('name', 'defaultName');
 
-        return compact('get', 'getName', 'post', 'postName', 'inputs', 'inputName','uid');
+        return compact('get', 'getName', 'post', 'postName', 'inputs', 'inputName','uid','bookId');
     }
 
     /**
