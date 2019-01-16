@@ -12,3 +12,6 @@ services:
        tty: true
        privileged: true
        entrypoint: ["php", "/var/www/swoft/bin/swoft", "ws:start"]
+
+       
+container_name: mySwoft
