@@ -17,7 +17,7 @@ use Swoft\Rpc\Client\Bean\Annotation\Reference;
  * 用户逻辑层
  * 同时可以被controller server task使用
  *
- * @Bean()
+ * @Bean("UserLogic")
  * @uses      UserLogic
  * @version   2017年10月15日
  * @author    stelin <phpcrazy@126.com>
