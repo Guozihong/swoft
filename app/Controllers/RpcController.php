@@ -40,7 +40,6 @@ class RpcController
 
     /**
      * @Reference("user")
-     * @var \App\Lib\MdDemoInterface
      */
     private $mdDemoService;
 
