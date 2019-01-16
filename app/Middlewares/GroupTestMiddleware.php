@@ -18,7 +18,6 @@ use Swoft\Http\Message\Middleware\MiddlewareInterface;
 
 
 /**
- * @Bean()
  * @uses      GroupTestMiddleware
  * @version   2017年11月16日
  * @author    huangzhhui <huangzhwork@gmail.com>
