@@ -34,6 +34,7 @@ class DemoController
      * @Inject("httpRouter")
      *
      * @var \Swoft\Http\Server\Router\HandlerMapping
+     * @param int $uid
      */
     private $router;
 
@@ -134,7 +135,7 @@ class DemoController
     {
         $data[] = translate('title', [], 'zh');
         $data[] = translate('title', [], 'en');
-        $data[] = translate('msg.body', ['stelin', 999], 'en');
+        $data[] = translate('msg.body', ['stelin', 999], 'zh');
         $data[] = translate('msg.body', ['stelin', 666], 'en');
 
         return $data;
