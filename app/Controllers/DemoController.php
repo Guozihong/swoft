@@ -58,10 +58,10 @@ class DemoController
     /**
      * 定义一个route,支持get和post方式，处理uri=/demo2/index
      *
-     * @RequestMapping(route="index/{uid12}/{bookId}", method={RequestMethod::GET, RequestMethod::POST})
+     * @RequestMapping(route="index/{uid}/{bookId}", method={RequestMethod::GET, RequestMethod::POST})
      *
      * @param Request $request
-     * @param int $uid
+     * @param int $bookId
      * @return array
      */
     public function index(Request $request,$bookId,$uid)
