@@ -16,6 +16,13 @@ use Swoole\WebSocket\Server;
  */
 class EchoController implements HandlerInterface
 {
+    /**
+     * {@inheritdoc}
+     */
+    public function checkHandshake(Request $request, Response $response): array
+    {
+        return [1, $response];
+    }
 
     /**
      * @param Server $server
