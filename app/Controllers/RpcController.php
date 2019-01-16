@@ -45,7 +45,8 @@ class RpcController
     private $mdDemoService;
 
     /**
-     * @Inject("UserLogic")
+     * @Inject()
+     * @var \App\Models\Logic\UserLogic
      */
     private $logic;
 
