@@ -39,7 +39,8 @@ class GroupTestMiddleware implements MiddlewareInterface
      */
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-        return response()->withStatus(401);
+        // return response()->withStatus(401);
+        return $response->withStatus(401);
         $response = $handler->handle($request);
         return $response->withAddedHeader('Middleware-Group-Test', 'success');
     }
