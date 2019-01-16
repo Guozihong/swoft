@@ -63,7 +63,7 @@ class DemoController
      * 定义一个route,支持get和post方式，处理uri=/demo2/index
      *
      * @RequestMapping(route="index/{uid}/{bookId}", method={RequestMethod::GET, RequestMethod::POST})
-     * @Middlewares(GroupTestMiddleware::class)
+     * @Middleware(GroupTestMiddleware::class)
      * @param Request $request
      * @return array
      */
