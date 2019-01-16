@@ -34,7 +34,6 @@ class DemoController
      * @Inject("httpRouter")
      *
      * @var \Swoft\Http\Server\Router\HandlerMapping
-     * @param int $uid
      */
     private $router;
 
@@ -65,7 +64,7 @@ class DemoController
      *
      * @return array
      */
-    public function index(Request $request)
+    public function index(Request $request,$uid)
     {
         // 获取所有GET参数
         $get = $request->query();
@@ -80,7 +79,7 @@ class DemoController
         // 获取name参数默认值defaultName
         $inputName = $request->input('name', 'defaultName');
 
-        return compact('get', 'getName', 'post', 'postName', 'inputs', 'inputName');
+        return compact('get', 'getName', 'post', 'postName', 'inputs', 'inputName','uid');
     }
 
     /**
