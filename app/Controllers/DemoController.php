@@ -95,7 +95,7 @@ class DemoController
             });
         });
 
-        return 'success index2';
+        return 'success index2 index3';
     }
 
     public function index6()
