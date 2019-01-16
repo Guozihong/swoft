@@ -58,7 +58,7 @@ class DemoController
     /**
      * 定义一个route,支持get和post方式，处理uri=/demo2/index
      *
-     * @RequestMapping(route="index", method={RequestMethod::GET, RequestMethod::POST})
+     * @RequestMapping(route="index/{uid}", method={RequestMethod::GET, RequestMethod::POST})
      *
      * @param Request $request
      *
