@@ -13,6 +13,7 @@ namespace App\Controllers;
 use App\Models\Entity\Count;
 use App\Models\Entity\User;
 use Swoft\Db\Db;
+use Swoft\App;
 use Swoft\Db\Query;
 use Swoft\Http\Server\Bean\Annotation\Controller;
 use Swoft\Http\Server\Bean\Annotation\RequestMapping;
