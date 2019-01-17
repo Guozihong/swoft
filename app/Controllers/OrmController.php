@@ -31,7 +31,7 @@ class OrmController
         $user->setAge(mt_rand(1, 100));
 
         $userId = $user->save()->getResult();
-
+        App::info("this errro log".$userId);
         return [$userId];
     }
 
