@@ -25,7 +25,7 @@ return [
         'serialize'   => 0,
     ],
     'demoRedis' => [
-        'db'     => 2,
+        'db'     => 0,
         'prefix' => 'demo_redis_',
     ],
 ];
