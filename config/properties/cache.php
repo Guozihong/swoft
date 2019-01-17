@@ -19,7 +19,7 @@ return [
         'maxWaitTime' => 3,
         'maxIdleTime' => 60,
         'timeout'     => 8,
-        'db'          => 1,
+        'db'          => 0,
         'prefix'      => 'redis_',
         'serialize'   => 0,
     ],
