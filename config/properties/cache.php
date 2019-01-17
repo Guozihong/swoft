@@ -11,8 +11,8 @@ return [
     'redis'     => [
         'name'        => 'redis',
         'uri'         => [
-            '127.0.0.1:6379?auth=Heimai666-root',
-            '127.0.0.1:6379?auth=Heimai666-root',
+            '115.159.204.72:6379?auth=Heimai666-root',
+            '115.159.204.72:6379?auth=Heimai666-root',
         ],
         'minActive'   => 8,
         'maxActive'   => 8,
