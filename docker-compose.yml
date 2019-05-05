@@ -3,7 +3,7 @@ services:
     swoft-dev:
         image: swoft/swoft:latest
         ports: # 端口映射: 本地端口 -> 容器内端口
-            - "9000:80"
+            - "9050:80"
         volumes: # 文件挂载: 本地文件路径 -> 容器内文件路径
             - /home/gzh/swoft:/var/www
         stdin_open: true
