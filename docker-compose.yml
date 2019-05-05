@@ -6,7 +6,7 @@ services:
         ports: # 端口映射: 本地端口 -> 容器内端口
             - "9050:80"
         volumes: # 文件挂载: 本地文件路径 -> 容器内文件路径
-            - /home/gzh/swoft:/var/www
+            - /home/gzh/swoft:/var/www/swoft
         stdin_open: true
         tty: true
         command: /bin/bash
